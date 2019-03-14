@@ -370,6 +370,10 @@ var zoomPlugin = {
 			chartInstance.update();
 		};
 
+		chartInstance.pan = function(deltaX,deltaY){
+			doPan(this, deltaX, deltaY);
+		}
+
 	},
 
 	beforeInit: function(chartInstance) {
